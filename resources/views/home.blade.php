@@ -2,7 +2,7 @@
 
 <h2>Lista dei film</h2>
 
-@foreach ($movies as $$movie)
+@foreach ($movies as $movie)
     <div>
         {{ $movie->title }}
     </div>
