@@ -1,4 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1 {
+  margin-top: 30px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies .single-movie {
+  border: 1px solid red;
+  width: calc(50% - 40px);
+  margin: 10px 20px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.movies .single-movie > div {
+  font-weight: bold;
+}
+
+.movies .single-movie .tag {
   color: red;
+}
+
+.movies .single-movie .title > div,
+.movies .single-movie .original-title > div,
+.movies .single-movie .vote > div {
+  margin-top: 10px;
+}
+
+.movies .single-movie:hover {
+  background-color: #ffcccc;
+  transition: 0.6s;
 }
 
