@@ -1,2 +1,6 @@
+// File che contiene tutti i link ai fogli di stile contenuti nella cartella partials
+// Deve contenere tutti gli import dato che è il file di riferimento che poi viene tradotto in css da scss tramite npm install
+// Funziona analogamente al file app.blade.php, deve contenere la struttura base diciamo, di riferimento
+
 @import 'partials/_general';
 @import 'partials/_main';
